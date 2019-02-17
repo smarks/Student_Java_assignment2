@@ -13,6 +13,9 @@ public class App {
      * @param value the message that will be displayed.
      */
     public App(String value) {
+        if (value == null) {
+            throw new IllegalArgumentException("Value can't be null");
+        }
         this.message = value;
     }
 
