@@ -16,4 +16,10 @@ public class AppTest {
         assertEquals("Verify the message is set correctly", message, app.getMessage());
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegative() {
+        String message = "Hello World";
+        App app = new App(null);
+        assertEquals("Verify the message is set correctly", message, app.getMessage());
+    }
 }
