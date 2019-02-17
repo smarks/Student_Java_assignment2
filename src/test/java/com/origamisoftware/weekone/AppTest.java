@@ -3,6 +3,7 @@ package com.origamisoftware.weekone;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 /**
  * A basic JUnit test for the app class.
@@ -18,8 +19,7 @@ public class AppTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testNegative() {
-        String message = "Hello World";
         App app = new App(null);
-        assertEquals("Verify the message is set correctly", message, app.getMessage());
+        assertNull("Verify the message is set correctly", app.getMessage());
     }
 }
