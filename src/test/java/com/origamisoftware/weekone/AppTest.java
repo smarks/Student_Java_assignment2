@@ -22,4 +22,10 @@ public class AppTest {
         App app = new App(null);
         assertNull("Verify the message is set correctly", app.getMessage());
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test2Negative() {
+        App app = new App(null);
+        assertNull("Verify the message is set correctly", app.getMessage());
+    }
 }
