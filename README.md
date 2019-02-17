@@ -1,2 +1,2 @@
-# Student_Java_assignment2
-Assignment 2
+# java_class
+This is a template project for the Java class. 
